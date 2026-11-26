@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Furon Bayroot — Lebanese Bakery in Dearborn, MI | Manakish, Kaak & Pies</title>
+<meta name="description" content="Furon Bayroot is a Lebanese bakery on Greenfield Rd in Dearborn, MI. Fresh manakish, kaak, pies, croissants and wraps, baked daily from 6 AM. Call 313-777-1177 to order or cater.">
+<meta property="og:title" content="Furon Bayroot — Fresh from the oven in Dearborn">
+<meta property="og:description" content="Manakish, kaak, pies, croissants and wraps. Open daily 6 AM – 3:30 PM at 6055 Greenfield Rd.">
+<meta property="og:image" content="https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg">
+<meta name="theme-color" content="#1c1512">
+<link rel="icon" href="https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "Furon Bayroot",
+  "image": "https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg",
+  "telephone": "+1-313-777-1177",
+  "servesCuisine": ["Lebanese", "Middle Eastern"],
+  "priceRange": "$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "6055 Greenfield Rd",
+    "addressLocality": "Dearborn",
+    "addressRegion": "MI",
+    "postalCode": "48126",
+    "addressCountry": "US"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "06:00",
+    "closes": "15:30"
+  }]
+}
+</script>
+<style>
+  :root{
+    --ink:#1c1512;
+    --ink-2:#2a201b;
+    --cream:#f6efe4;
+    --paper:#fbf7f0;
+    --sand:#e9dcc8;
+    --red:#c8202f;
+    --red-deep:#9e1622;
+    --gold:#d9a441;
+    --muted:#6f6258;
+    --line:#dccdb7;
+    --radius:14px;
+    --serif:"Fraunces", Georgia, serif;
+    --sans:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth;scroll-padding-top:84px}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+  .eyebrow{font-size:.78rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+  h1,h2,h3{font-family:var(--serif);line-height:1.02;letter-spacing:-.01em}
+  h2{font-size:clamp(2.1rem,4.6vw,3.4rem);font-weight:700}
+  .btn{display:inline-flex;align-items:center;gap:.55rem;padding:.9rem 1.35rem;border-radius:999px;font-weight:600;text-decoration:none;font-size:.98rem;transition:transform .15s ease,background .15s ease,box-shadow .15s ease;white-space:nowrap}
+  .btn:active{transform:translateY(1px)}
+  .btn-red{background:var(--red);color:#fff;box-shadow:0 8px 24px -10px rgba(200,32,47,.8)}
+  .btn-red:hover{background:var(--red-deep)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.28);color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.08)}
+  .btn-dark{background:var(--ink);color:#fff}
+  .btn-dark:hover{background:#000}
+  .btn svg{width:18px;height:18px;flex:none}
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+
+  /* ---------- Header ---------- */
+  .topbar{background:var(--red);color:#fff;font-size:.82rem;font-weight:600;text-align:center;padding:.45rem 1rem;letter-spacing:.02em}
+  .topbar a{text-decoration:none;border-bottom:1px solid rgba(255,255,255,.5)}
+  header.nav{position:sticky;top:0;z-index:50;background:rgba(28,21,18,.92);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:1rem}
+  .brand{display:flex;align-items:center;gap:.7rem;text-decoration:none;color:#fff}
+  .brand img{width:42px;height:42px;border-radius:50%;object-fit:cover;box-shadow:0 0 0 2px var(--red)}
+  .brand span{font-family:var(--serif);font-weight:900;font-size:1.15rem;letter-spacing:.04em}
+  .brand span b{color:var(--red);font-weight:900}
+  .nav ul{display:flex;gap:1.9rem;list-style:none}
+  .nav ul a{color:#e8ddd0;text-decoration:none;font-size:.95rem;font-weight:500}
+  .nav ul a:hover{color:#fff}
+  .nav .btn{padding:.6rem 1rem;font-size:.9rem}
+  .status{display:inline-flex;align-items:center;gap:.45rem;font-size:.82rem;color:#d9cfc4;font-weight:500}
+  .dot{width:8px;height:8px;border-radius:50%;background:#7a7a7a}
+  .is-open .dot{background:#3ecf6e;box-shadow:0 0 0 4px rgba(62,207,110,.18)}
+  .is-closed .dot{background:#e0565f}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;background:var(--ink);color:#fff;overflow:hidden;isolation:isolate}
+  .hero::before{content:"";position:absolute;inset:-20% -10% auto auto;width:780px;height:780px;border-radius:50%;background:radial-gradient(closest-side,rgba(232,92,40,.55),rgba(200,32,47,.25) 45%,transparent 70%);z-index:-1;filter:blur(10px)}
+  .hero::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.07;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+  .hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:3rem;padding:5.5rem 0 6rem}
+  .hero h1{font-size:clamp(3rem,7.4vw,6.2rem);font-weight:900;margin:.9rem 0 1.4rem}
+  .hero h1 em{font-style:italic;font-weight:500;color:var(--gold)}
+  .hero p.lead{font-size:1.18rem;color:#d8cdc2;max-width:33rem}
+  .hero .ctas{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2.2rem}
+  .hero .facts{display:flex;flex-wrap:wrap;gap:2.2rem;margin-top:3rem;padding-top:1.6rem;border-top:1px solid rgba(255,255,255,.1)}
+  .facts div{font-size:.85rem;color:#b9ada1}
+  .facts strong{display:block;font-family:var(--serif);font-size:1.35rem;color:#fff;font-weight:700}
+  .hero-art{position:relative;justify-self:center;width:min(440px,100%)}
+  .hero-art .plate{aspect-ratio:1;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px rgba(255,255,255,.04),0 0 0 22px rgba(200,32,47,.14),0 40px 80px -20px rgba(0,0,0,.7)}
+  .hero-art .plate img{width:100%;height:100%;object-fit:cover}
+  .badge{position:absolute;left:-18px;bottom:30px;background:var(--cream);color:var(--ink);border-radius:16px;padding:.85rem 1.1rem;box-shadow:0 20px 40px -12px rgba(0,0,0,.6);display:flex;gap:.7rem;align-items:center;transform:rotate(-3deg)}
+  .badge .ico{width:40px;height:40px;border-radius:10px;background:var(--red);display:grid;place-items:center;color:#fff;font-size:1.2rem}
+  .badge b{font-family:var(--serif);font-size:1.05rem;display:block;line-height:1.1}
+  .badge small{color:var(--muted);font-size:.8rem}
+  .stamp{position:absolute;right:-6px;top:6px;width:118px;height:118px;border-radius:50%;background:var(--gold);color:var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-weight:900;font-size:.95rem;line-height:1.05;transform:rotate(12deg);box-shadow:0 14px 30px -10px rgba(0,0,0,.6)}
+  .stamp span{display:block;font-size:2rem}
+
+  /* ---------- Marquee ---------- */
+  .ticker{background:var(--red);color:#fff;overflow:hidden;border-block:3px solid var(--ink)}
+  .ticker-track{display:flex;gap:2.5rem;width:max-content;padding:.95rem 0;animation:slide 38s linear infinite;font-family:var(--serif);font-size:1.35rem;font-weight:700;font-style:italic}
+  .ticker-track span::after{content:"✦";margin-left:2.5rem;color:var(--gold);font-style:normal}
+  @keyframes slide{to{transform:translateX(-50%)}}
+
+  /* ---------- About ---------- */
+  section{padding:6.5rem 0}
+  .about{background:var(--paper)}
+  .about .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:start}
+  .about h2{margin-top:.8rem}
+  .about p.big{font-size:1.2rem;color:var(--ink-2)}
+  .about p.big + p{margin-top:1rem;color:var(--muted)}
+  .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:4rem}
+  .pillar{background:var(--cream);border:1px solid var(--line);border-radius:var(--radius);padding:1.7rem}
+  .pillar .num{font-family:var(--serif);font-size:.95rem;color:var(--red);font-weight:700}
+  .pillar h3{font-size:1.45rem;margin:.6rem 0 .5rem}
+  .pillar p{color:var(--muted);font-size:.97rem}
+
+  /* ---------- Menu ---------- */
+  .menu{background:var(--cream);border-top:1px solid var(--line)}
+  .menu-head{display:flex;justify-content:space-between;align-items:end;gap:2rem;flex-wrap:wrap;margin-bottom:2.4rem}
+  .menu-head p{color:var(--muted);max-width:28rem;margin-top:.8rem}
+  .search{position:relative;width:min(320px,100%)}
+  .search input{width:100%;padding:.85rem 1rem .85rem 2.6rem;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);font:inherit;font-size:.95rem;color:var(--ink)}
+  .search input:focus{outline:none;border-color:var(--red)}
+  .search svg{position:absolute;left:.95rem;top:50%;transform:translateY(-50%);width:17px;height:17px;color:var(--muted)}
+  .tabs{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem;position:sticky;top:68px;z-index:5;background:var(--cream);padding:.8rem 0;border-bottom:1px solid var(--line)}
+  .tab{font:inherit;font-weight:600;font-size:.93rem;padding:.6rem 1.05rem;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);color:var(--ink-2);cursor:pointer;transition:.15s}
+  .tab:hover{border-color:var(--ink)}
+  .tab[aria-selected="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+  .tab small{opacity:.6;font-weight:500;margin-left:.3rem}
+  .menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem}
+  .cat{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:1.8rem 1.8rem 1.4rem}
+  .cat.wide{grid-column:1/-1}
+  .cat-top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-bottom:1rem;margin-bottom:.4rem;border-bottom:2px solid var(--ink)}
+  .cat h3{font-size:1.9rem;font-weight:900}
+  .cat-top .note{font-size:.85rem;color:var(--muted);text-align:right}
+  .cat-top .note b{color:var(--red)}
+  .cols{display:grid;grid-template-columns:1fr auto auto;column-gap:1.4rem}
+  .cat.wide .cols-2{display:grid;grid-template-columns:1fr 1fr;column-gap:3rem}
+  .colhead{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:.6rem 0 .3rem;text-align:right}
+  .colhead:first-child{text-align:left}
+  .row{display:contents}
+  .row > *{padding:.62rem 0;border-bottom:1px dashed var(--line);font-size:.98rem}
+  .row .name{font-weight:500}
+  .row .name i{font-style:normal;color:var(--muted);font-size:.85rem;margin-left:.3rem}
+  .row .p{text-align:right;font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+  .row .p.empty{color:#bcae9c;font-weight:400}
+  .cols.single{grid-template-columns:1fr auto}
+  .sub{font-family:var(--serif);font-weight:700;font-size:1.15rem;margin:1.4rem 0 .2rem;display:flex;justify-content:space-between;align-items:baseline}
+  .sub span{font-family:var(--sans);font-size:.85rem;color:var(--red);font-weight:600}
+  .hidden{display:none!important}
+  .empty-state{text-align:center;padding:3rem 1rem;color:var(--muted)}
+  .menu-foot{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:2rem;color:var(--muted);font-size:.9rem}
+
+  /* ---------- Catering ---------- */
+  .catering{background:var(--red);color:#fff;position:relative;overflow:hidden}
+  .catering::before{content:"";position:absolute;right:-120px;top:-120px;width:460px;height:460px;border-radius:50%;border:60px solid rgba(255,255,255,.07)}
+  .catering .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:3rem;align-items:center;position:relative}
+  .catering .eyebrow{color:var(--gold)}
+  .catering h2{margin:.8rem 0 1.2rem}
+  .catering p{color:#ffe3e1;font-size:1.12rem;max-width:32rem}
+  .trays{display:grid;gap:.8rem}
+  .tray{background:rgba(0,0,0,.18);border:1px solid rgba(255,255,255,.14);border-radius:var(--radius);padding:1.1rem 1.3rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+  .tray b{font-family:var(--serif);font-size:1.2rem;display:block}
+  .tray small{color:#ffd2cf}
+  .tray .price{font-family:var(--serif);font-size:1.6rem;font-weight:900;color:#fff}
+  .catering .btn-dark{margin-top:2rem}
+
+  /* ---------- Visit ---------- */
+  .visit .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:3rem;align-items:stretch}
+  .visit h2{margin:.8rem 0 2rem}
+  .info{display:grid;gap:1.6rem}
+  .info-item{display:grid;grid-template-columns:44px 1fr;gap:1rem;align-items:start}
+  .info-item .ic{width:44px;height:44px;border-radius:12px;background:var(--cream);border:1px solid var(--line);display:grid;place-items:center;color:var(--red)}
+  .info-item .ic svg{width:20px;height:20px}
+  .info-item h4{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:700;margin-bottom:.2rem}
+  .info-item p,.info-item a{font-size:1.1rem;font-weight:500;text-decoration:none}
+  .hours-today{display:inline-block;margin-top:.35rem;font-size:.85rem;font-weight:600;padding:.2rem .6rem;border-radius:999px;background:var(--cream)}
+  .visit .ctas{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2.2rem}
+  .map{border-radius:20px;overflow:hidden;border:1px solid var(--line);min-height:420px;background:var(--sand)}
+  .map iframe{width:100%;height:100%;min-height:420px;border:0;filter:saturate(.85)}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--ink);color:#bfb3a7;padding:3.5rem 0 2.5rem;font-size:.92rem}
+  footer .wrap{display:flex;justify-content:space-between;gap:2rem;flex-wrap:wrap;align-items:center}
+  footer .brand span{color:#fff}
+  footer a{text-decoration:none}
+  footer a:hover{color:#fff}
+  footer .links{display:flex;gap:1.5rem;flex-wrap:wrap}
+  .copy{width:100%;border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;margin-top:.5rem;font-size:.82rem;color:#8a7e73}
+
+  /* ---------- Mobile call bar ---------- */
+  .callbar{display:none}
+
+  /* ---------- Reveal ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    .ticker-track{animation:none}
+    html{scroll-behavior:auto}
+  }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:960px){
+    .nav ul,.nav .status{display:none}
+    .hero .wrap{grid-template-columns:1fr;padding:3.5rem 0 4.5rem;gap:3rem}
+    .hero-art{width:min(340px,82%)}
+    .about .wrap,.catering .wrap,.visit .wrap{grid-template-columns:1fr;gap:2.5rem}
+    .pillars{grid-template-columns:1fr}
+    .menu-grid{grid-template-columns:1fr}
+    .cat.wide .cols-2{grid-template-columns:1fr}
+    .cat.wide .cols-2 > .cols + .cols .colhead{display:none}
+    section{padding:4.5rem 0}
+  }
+  @media (max-width:640px){
+    body{padding-bottom:76px}
+    .topbar{font-size:.76rem}
+    .cat{padding:1.4rem 1.2rem 1rem}
+    .cat h3{font-size:1.6rem}
+    .cols{column-gap:.9rem}
+    .row > *{font-size:.93rem}
+    .stamp{width:92px;height:92px;font-size:.8rem}
+    .stamp span{font-size:1.5rem}
+    .badge{left:-6px}
+    .callbar{display:grid;grid-template-columns:1fr 1fr;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:.7rem .9rem calc(.7rem + env(safe-area-inset-bottom));background:rgba(28,21,18,.96);backdrop-filter:blur(10px);border-top:1px solid rgba(255,255,255,.08)}
+    .callbar .btn{justify-content:center;padding:.85rem}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">Fresh-baked daily from 6 AM · Catering for every occasion · <a href="tel:+13137771177">313-777-1177</a></div>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Furon Bayroot home">
+      <img src="https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg" alt="" width="42" height="42">
+      <span>FURON <b>BAYROOT</b></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">Our Bakery</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#visit">Visit</a></li>
+      </ul>
+    </nav>
+    <span class="status js-status"><span class="dot"></span><span class="js-status-text">Open daily 6 AM – 3:30 PM</span></span>
+    <a class="btn btn-red" href="tel:+13137771177">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+      Call to order
+    </a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" style="padding:0">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow" style="color:var(--gold)">Lebanese bakery · Dearborn, Michigan</span>
+        <h1>Straight from <em>the furn</em> to your table.</h1>
+        <p class="lead">Za'atar manakish, sesame kaak, golden pies and wraps, baked fresh every morning on Greenfield Road. Come hungry, leave with a bag for later.</p>
+        <div class="ctas">
+          <a class="btn btn-red" href="#menu">See the menu
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="tel:+13137771177">Call 313-777-1177</a>
+        </div>
+        <div class="facts">
+          <div><strong>$3</strong>Manakish from</div>
+          <div><strong>6 AM</strong>Open 7 days</div>
+          <div><strong>60+</strong>Items baked fresh</div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="plate"><img src="https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg" alt="Furon Bayroot logo over a spread of fresh manakish" width="440" height="440"></div>
+        <div class="stamp"><div><span>$11</span>a dozen<br>mini pies</div></div>
+        <div class="badge">
+          <div class="ico">🔥</div>
+          <div><b class="js-badge-title">Hot &amp; fresh daily</b><small class="js-badge-sub">6:00 AM – 3:30 PM</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Za'atar manakish</span><span>Sesame kaak</span><span>Spinach pies</span><span>Akawi cheese</span><span>Kafta wraps</span><span>Sojok &amp; cheese</span><span>Croissant za'atar</span><span>Kishek</span>
+      <span>Za'atar manakish</span><span>Sesame kaak</span><span>Spinach pies</span><span>Akawi cheese</span><span>Kafta wraps</span><span>Sojok &amp; cheese</span><span>Croissant za'atar</span><span>Kishek</span>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Our bakery</span>
+        <h2>A Beirut bakery,<br>made for the neighborhood.</h2>
+      </div>
+      <div class="reveal">
+        <p class="big"><em>Furon Bayroot</em> means “Beirut ovens.” It’s the kind of corner bakery you grow up with in Lebanon: the dough is made in the morning, the oven runs hot all day, and breakfast costs a few dollars.</p>
+        <p>We bake the classics our customers ask for by name: thyme-and-oil manakish, sesame kaak stuffed with cheese, triangle spinach pies, and rolled wraps of kafta, sojok and bastirma. Stop in on your way to work, or call ahead and we’ll have it ready.</p>
+      </div>
+    </div>
+    <div class="wrap pillars">
+      <div class="pillar reveal"><div class="num">01</div><h3>Baked to order</h3><p>Manakish and kaak go into the oven when you order them, so they reach you hot.</p></div>
+      <div class="pillar reveal"><div class="num">02</div><h3>The real recipes</h3><p>Za'atar, akawi, kishek, labne and sojok, made the way they’re made back home.</p></div>
+      <div class="pillar reveal"><div class="num">03</div><h3>Feeds a crowd</h3><p>Mini pies by the dozen and party trays for the office, the family or the masjid.</p></div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="menu" id="menu">
+    <div class="wrap">
+      <div class="menu-head">
+        <div>
+          <span class="eyebrow">The menu</span>
+          <h2 style="margin-top:.8rem">What’s in the oven.</h2>
+          <p>Manakish and wraps come in Regular (R) or Large (L). Call ahead and we’ll have your order hot when you arrive.</p>
+        </div>
+        <label class="search">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input type="search" id="menu-search" placeholder="Search the menu: zaatar, cheese…" aria-label="Search the menu">
+        </label>
+      </div>
+
+      <div class="tabs" role="tablist" aria-label="Menu categories" id="tabs"></div>
+      <div class="menu-grid" id="menu-grid"></div>
+      <div class="empty-state hidden" id="empty">Nothing matches that. Try “cheese” or “meat”, or call us. We probably make it.</div>
+
+      <div class="menu-foot">
+        <span>Prices and availability can change. Call for today’s selection.</span>
+        <a class="btn btn-dark" href="tel:+13137771177">Call in your order</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATERING -->
+  <section class="catering" id="catering">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Catering</span>
+        <h2>Feeding a party?<br>We’ve got trays.</h2>
+        <p>Birthdays, office breakfasts, aza, Eid, game day. Tell us how many people and when, and we’ll put together a spread of mini pies, manakish and kaak that disappears fast.</p>
+        <a class="btn btn-dark" href="tel:+13137771177">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+          Plan a catering order
+        </a>
+      </div>
+      <div class="trays reveal">
+        <div class="tray"><div><b>Mini pies, by the dozen</b><small>Cheese, za'atar, meat, spinach, pizza, sojok, pepperoni</small></div><div class="price">$11</div></div>
+        <div class="tray"><div><b>Half dozen mini pies</b><small>Mix and match flavors</small></div><div class="price">$6</div></div>
+        <div class="tray"><div><b>Manakish platters</b><small>Large manakish, cut and boxed for sharing</small></div><div class="price" style="font-size:1rem;font-family:var(--sans);font-weight:600">Call for quote</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="visit" id="visit">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Visit us</span>
+        <h2>Come see us on Greenfield.</h2>
+        <div class="info">
+          <div class="info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+            <div><h4>Address</h4><p>6055 Greenfield Rd<br>Dearborn, MI 48126</p></div>
+          </div>
+          <div class="info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+            <div><h4>Hours</h4><p>Every day, 6:00 AM – 3:30 PM</p><span class="hours-today js-status"><span class="js-status-text">Open 7 days a week</span></span></div>
+          </div>
+          <div class="info-item">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></div>
+            <div><h4>Phone, orders &amp; catering</h4><a href="tel:+13137771177">313-777-1177</a></div>
+          </div>
+        </div>
+        <div class="ctas">
+          <a class="btn btn-red" href="https://www.google.com/maps/search/?api=1&query=6055+Greenfield+Rd+Dearborn+MI+48126" target="_blank" rel="noopener">Get directions</a>
+          <a class="btn btn-dark" href="tel:+13137771177">Call us</a>
+        </div>
+      </div>
+      <div class="map reveal">
+        <iframe title="Map to Furon Bayroot, 6055 Greenfield Rd, Dearborn" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=6055+Greenfield+Rd,+Dearborn,+MI+48126&output=embed"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="https://furonbayroot.netlify.app/assets/furon-bayroot-logo.jpeg" alt="" width="42" height="42"><span>FURON <b>BAYROOT</b></span></a>
+    <div class="links">
+      <a href="#menu">Menu</a><a href="#catering">Catering</a><a href="#visit">Visit</a><a href="tel:+13137771177">313-777-1177</a>
+    </div>
+    <div class="copy">© <span id="yr">2026</span> Furon Bayroot · 6055 Greenfield Rd, Dearborn, MI 48126 · Open daily 6:00 AM – 3:30 PM</div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="btn btn-red" href="tel:+13137771177">Call to order</a>
+  <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=6055+Greenfield+Rd+Dearborn+MI+48126" target="_blank" rel="noopener">Directions</a>
+</div>
+
+<script>
+/* ---------- Menu data (from the in-store menu) ---------- */
+const MENU = [
+  { id:"manakish", name:"Manakish", wide:true, sizes:["R","L"], note:"Regular / Large",
+    items:[
+      ["Cheese",4.5,5.5],["Cheese w/ Za'atar",5,6],["Cheese w/ Veggie",5.5,6.5],["Cheese w/ Pepperoni",6,7],
+      ["Cheese w/ Sojok",6,7],["Za'atar (Thyme)",3,4],["Za'atar w/ Cheese",4.5,5.5],["Za'atar w/ Veggie",5,6],
+      ["½ Za'atar ½ Cheese",5,6.5],["Meat",4,6],["Meat w/ Cheese",5.5,7],["Sojok",5,7],["Sojok w/ Veggie",6,8],
+      ["Kafta",5,6],["Kafta w/ Cheese",5.5,7],["Akawi Cheese",5,6.5],["Akawi w/ Za'atar",5.5,7],["Kishek",4,5],
+      ["Kishek w/ Cheese",4.5,6],["Veggie",3.5,5],["Veggie w/ Cheese",4.5,6],["Pizza",5,7],["Pizza w/ Veggie",6.5,8.5],
+      ["Pizza w/ Pepperoni",7,9.5],["Spinach",4,5.5],["Spinach & Cheese",5,6.5],["Labne",5.5,7],["Egg w/ Cheese",5.5,6.5],["Broccoli",4.5,6.5]
+    ]},
+  { id:"kaak", name:"Kaak", sizes:["Price"], note:"Sesame street bread, stuffed",
+    items:[
+      ["Kaak Plain",5],["Cheese",8],["Cheese w/ Za'atar",8.5],["Za'atar",6],["Za'atar w/ Veggie",7.5],["Za'atar w/ Cheese",7],
+      ["Picon",8],["Labne w/ Veggie",9],["Turkey w/ Veggie",12],["Sojok w/ Veggie",12],["Kafta w/ Veggie",12],["Chicken w/ Veggie",12]
+    ]},
+  { id:"wraps", name:"Wraps", sizes:["R","L"], note:"Regular / Large",
+    items:[
+      ["Chicken",8,12],["Turkey",8,12],["Meat",7,10],["Kafta",8,12],["Sojok",8,12],["Bastirma",10,14],["Labne",5,null]
+    ]},
+  { id:"pies", name:"Pies", sizes:["Price"], note:"Mini &amp; large",
+    groups:[
+      { title:"Mini pies", tag:"Dozen $11 · ½ dozen $6",
+        items:[["Cheese",1],["Za'atar (Thyme)",1],["Meat",1],["Spinach",1],["Pizza",1],["Sojok",1],["Pepperoni",1]] },
+      { title:"Large pies", tag:"",
+        items:[["Za'atar (Thyme)",1.5],["Sambosik",2],["Meat",2],["Spinach",2],["Sojok",2],["Pizza",4],["Pepperoni Roll",4],["Turkey Roll",4],["Labne & Za'atar",2]] }
+    ]},
+  { id:"croissants", name:"Croissants", sizes:["Price"], note:"Baked every morning",
+    items:[["Croissant",4],["Croissant Chocolate",5],["Croissant Cheese",5],["Croissant Za'atar",5]] }
+];
+
+const money = v => v == null ? "—" : "$" + (Number.isInteger(v) ? v : v.toFixed(1).replace(/\.0$/,"") );
+const esc = s => s.replace(/&(?!amp;)/g,"&amp;").replace(/</g,"&lt;");
+
+function rows(items, sizes){
+  const head = `<div class="colhead">Item</div>` + sizes.map(s=>`<div class="colhead">${s==="R"?"Reg":s==="L"?"Large":""}</div>`).join("");
+  const body = items.map(([n,...p]) =>
+    `<div class="row" data-name="${esc(n.toLowerCase())}"><div class="name">${esc(n)}</div>` +
+    sizes.map((_,i)=>`<div class="p${p[i]==null?" empty":""}">${money(p[i])}</div>`).join("") + `</div>`).join("");
+  return `<div class="cols${sizes.length===1?" single":""}">${head}${body}</div>`;
+}
+
+function renderMenu(){
+  const grid = document.getElementById("menu-grid");
+  grid.innerHTML = MENU.map(c => {
+    let inner;
+    if (c.groups){
+      inner = c.groups.map(g=>`<div class="group"><div class="sub">${g.title}${g.tag?`<span>${g.tag}</span>`:""}</div>${rows(g.items,c.sizes)}</div>`).join("");
+    } else if (c.wide){
+      const half = Math.ceil(c.items.length/2);
+      inner = `<div class="cols-2">${rows(c.items.slice(0,half),c.sizes)}${rows(c.items.slice(half),c.sizes)}</div>`;
+    } else inner = rows(c.items,c.sizes);
+    return `<article class="cat${c.wide?" wide":""} reveal in" data-cat="${c.id}">
+      <div class="cat-top"><h3>${c.name}</h3><div class="note">${c.note}</div></div>${inner}</article>`;
+  }).join("");
+
+  const count = c => c.items ? c.items.length : c.groups.reduce((a,g)=>a+g.items.length,0);
+  const tabs = document.getElementById("tabs");
+  tabs.innerHTML = `<button class="tab" role="tab" aria-selected="true" data-tab="all">All</button>` +
+    MENU.map(c=>`<button class="tab" role="tab" aria-selected="false" data-tab="${c.id}">${c.name}<small>${count(c)}</small></button>`).join("");
+}
+renderMenu();
+
+let activeTab = "all";
+function applyFilter(){
+  const q = document.getElementById("menu-search").value.trim().toLowerCase().replace(/zaatar/g,"za'atar");
+  let anyVisible = false;
+  document.querySelectorAll(".cat").forEach(cat=>{
+    const inTab = activeTab==="all" || cat.dataset.cat===activeTab;
+    let hits = 0;
+    cat.querySelectorAll(".row").forEach(r=>{
+      const show = !q || r.dataset.name.replace(/&amp;/g,"&").includes(q) || cat.dataset.cat.includes(q);
+      r.classList.toggle("hidden", !show); if (show) hits++;
+    });
+    cat.querySelectorAll(".group").forEach(g=> g.classList.toggle("hidden", !g.querySelector(".row:not(.hidden)")));
+    cat.querySelectorAll(".cols").forEach(c=> c.classList.toggle("hidden", !c.querySelector(".row:not(.hidden)")));
+    const visible = inTab && hits>0;
+    cat.classList.toggle("hidden", !visible);
+    if (visible) anyVisible = true;
+  });
+  document.getElementById("empty").classList.toggle("hidden", anyVisible);
+}
+document.getElementById("tabs").addEventListener("click", e=>{
+  const b = e.target.closest(".tab"); if(!b) return;
+  activeTab = b.dataset.tab;
+  document.querySelectorAll(".tab").forEach(t=>t.setAttribute("aria-selected", t===b));
+  applyFilter();
+});
+document.getElementById("menu-search").addEventListener("input", applyFilter);
+
+/* ---------- Open / closed (Dearborn time) ---------- */
+(function(){
+  const now = new Date(new Date().toLocaleString("en-US",{timeZone:"America/Detroit"}));
+  const mins = now.getHours()*60 + now.getMinutes();
+  const open = 6*60, close = 15*60+30;
+  let text, isOpen = mins>=open && mins<close;
+  if (isOpen){
+    const left = close - mins;
+    text = left <= 60 ? `Open now · closes in ${left} min` : "Open now · until 3:30 PM";
+  } else {
+    text = mins < open ? "Closed · opens today at 6 AM" : "Closed · opens tomorrow at 6 AM";
+  }
+  document.querySelectorAll(".js-status").forEach(el=>{
+    el.classList.add(isOpen?"is-open":"is-closed");
+    el.querySelector(".js-status-text").textContent = text;
+  });
+  document.querySelector(".js-badge-title").textContent = isOpen ? "Oven’s on right now" : "Hot & fresh daily";
+  document.querySelector(".js-badge-sub").textContent = isOpen ? "Open until 3:30 PM" : "Opens at 6:00 AM";
+  document.getElementById("yr").textContent = now.getFullYear();
+})();
+
+/* ---------- Reveal on scroll ---------- */
+const io = new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add("in"); io.unobserve(e.target);} }),{threshold:.12});
+document.querySelectorAll(".reveal:not(.in)").forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
